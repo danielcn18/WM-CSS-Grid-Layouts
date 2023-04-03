@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid-Layout - Form</title>
+    <style>
+        html{
+            min-height: 100vh;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to top right, #88bce4, #486ca4);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #contain{ 
+            height: 88vh;
+            width: 92%;
+            padding: 1rem 0;
+            margin: 4vh auto;
+            border-radius: 6px;
+            background-color: white;
+        }
+        #contain>form{
+            width: 40%;
+            height: auto;
+            border-radius: 6px;
+            padding: 1rem;
+            border: 1px solid black;
+            margin: 18vh auto;
+        }
+        #contain>form>h3{
+            color: blue;
+            text-align: center;
+            font-size: 22px;
+            margin: 1px 0;     
+        }
+        #submit{
+            background-color: #486ca4;
+            border: 1px solid lightblue;
+            color: white;
+            padding: 7px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        #info{
+            background-color: #eeeeee;
+            margin: 6px auto;
+            padding: 7px;
+            display: grid;
+            grid-template-columns: 42% 58%;
+            grid-template-rows: auto;
+        }
+        #info>label, #info>input, #info>textarea{
+            padding: 4px;
+            width: 95%;
+            height: auto;
+            margin-bottom: 1vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #info>input{
+            font-size: 16px;
+        }
+        #info>label{
+            font-size: 17px;
+        }
+        #info>textarea{
+            font-size: 16px;
+            width: 95.5%;
+            max-width: 95.5%;
+            min-width: 95.5%;
+            height: 11vh;
+            min-height: 2vh;
+            max-height: 35vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="contain">
+        <form>
+            <h3>Register Form</h3>
+            <div id="info">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+                <label for="deposit">Deposit ($)</label>
+                <input type="text" id="deposit" name="despoit" placeholder="Deposit ($)">
+                <label for="comment">Comment</label>
+                <textarea maxlength="300" placeholder="Add Comment Here"></textarea>
+                <!-- <textarea></textarea> --> 
+            </div>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>

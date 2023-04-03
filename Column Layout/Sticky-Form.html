@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid-Layout - Model</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+        }
+        header, footer, main{
+            padding: 1rem;
+        }
+        header, footer{
+            background-color: #304ca4;
+            color: white;
+        }
+        main{
+            background-color: white;
+            color: black;
+        }
+        footer{
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Header</h2>
+    </header>
+    <main>
+        <h3>Main Section</h3>
+    </main>
+    <footer>
+        <h4>Footer</h4>
+    </footer>
+</body>
+</html>

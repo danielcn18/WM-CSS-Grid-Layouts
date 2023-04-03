@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <style>
+       body{
+        margin: 0;
+        padding: 0;
+            background-image: linear-gradient(to right, #7cbce4, #486ca4);
+        }
+        #contain{
+            display: grid;
+            height: 84vh;
+            width: 90%;
+            margin: 8vh auto 0 auto;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 1fr;
+            background-color: white;
+        }
+        h2, p{
+            margin: 0 0 12px 0;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        #sidebar, #main{
+            padding: 15px;
+        }
+        #contain>#sidebar{
+            background-color: #2d4aa4;
+            grid-column: 1/2;
+            color: white;
+        }
+        #contain>#main{
+            background-color: white;
+            grid-column: 2/8;
+        }
+    </style>
+</head>
+<body>
+    <div id="contain">
+        <div id="sidebar">
+            <p>Side Bar Content</p>
+        </div>
+        <div id="main">
+            <h2>Page Heading</h2>
+            <p>This is just some page content</p>
+            <p>This is just some page content</p>
+        </div>
+    </div>
+</body>
+</html>
